@@ -9,7 +9,7 @@ app.use(express.logger());
 app.use(express.bodyParser());
 
 app.get('/', function(req, resp){
-	resp.sendfile('home.html');
+	resp.sendfile('index.html');
 });
 
 app.get('/stackoverflow', function(req, resp) {
