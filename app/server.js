@@ -15,7 +15,7 @@ app.get('/', function(req, resp){
 app.get('/search', function(req, resp) {
 	var result = {};
 
-	email = req.email;
+	var email = req.email;
 
 	scrapeDataFromPage('http://stackoverflow.com/users/569413/' + email, 
 		'span.reputation-score', function(scrapedData) {
